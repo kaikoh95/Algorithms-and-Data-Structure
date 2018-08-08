@@ -61,11 +61,9 @@ def evaluate_postfix(expression):
     """
     # Split postfix string into tokens. For example:
     #  '2 3 +' => ['2', '3', '+']
-    # Don't worry about how this works
+
     tokens = re.findall(r'(\d+|\*|\+|\/|\-|\)|\(|\^)', expression)
 
-    #Code to evaluate the postfix expression and return the result goes here
-    # ---start student section---
     list2 = []
     stack = Stack()
     for symbol in tokens:
@@ -84,7 +82,7 @@ def evaluate_postfix(expression):
     if final % int(final) == 0:
         final = round(final)
     return final      
-    # ===end student section===
+
 
 
 def infix_to_postfix(infix_expression):
@@ -108,11 +106,8 @@ def infix_to_postfix(infix_expression):
 
     # Split infix string into tokens. For example:
     #  '2+3*4' => ['2', '+', '3', '*', '4']
-    # Don't worry too much about how...
     tokens = re.findall(r'(\d+|\*|\+|\/|\-|\)|\(|\^)', infix_expression)
 
-    #Code to process tokens and return the postfix string goes here
-    # ---start student section---
     output = []
     stack = Stack()
     for s in tokens:
@@ -140,7 +135,6 @@ def infix_to_postfix(infix_expression):
         count += 1
     string += output[-1]
     return string
-    # ===end student section===
 
 
 def evaluate_infix(infix_expression):
@@ -164,13 +158,8 @@ def evaluate_infix(infix_expression):
 
     # Split infix string into tokens. For example:
     #  '2+3*4' => ['2', '+', '3', '*', '4']
-    # Don't worry too much about how...
     tokens = re.findall(r'(\d+|\*|\+|\/|\-|\)|\(|\^)', infix_expression)
 
-
-    #Code to process tokens and evaluate the infix expression
-
-    # ---start student section---
     operator = Stack()
     operand = Stack()
     for s in tokens:
@@ -208,7 +197,6 @@ def evaluate_infix(infix_expression):
     if result % int(result) == 0:
         result = round(result)
     return result
-    # ===end student section===
 
 
 
