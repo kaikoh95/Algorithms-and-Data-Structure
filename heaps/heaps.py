@@ -79,10 +79,9 @@ class MinHeap(Heap):
         >>> h._items
         [0, 2, 3, 5, 7, 4]
         """
-        # ---start student section---
+        
         self._items.append(item)
         self._sift_up(len(self._items) - 1)
-        # ===end student section===
 
     #-------------------------------------------------
     def _sift_up(self, index):
@@ -169,7 +168,7 @@ class MinHeap(Heap):
         >>> h.validate()
         True
         """
-        # ---start student section---
+        
         if len(self._items) == 0:
             return None
         else:
@@ -178,7 +177,6 @@ class MinHeap(Heap):
             self._items = self._items[:-1]
             self._sift_down(1)
             return value
-        # ===end student section===
 
     #-------------------------------------------------
     def _sift_down(self, index):
@@ -226,7 +224,6 @@ class MinHeap(Heap):
         False
         """
 
-        # ---start student section---
         valid = True
         i = 1
         left = i * 2 
@@ -245,7 +242,6 @@ class MinHeap(Heap):
             i += 1
             right = i * 2 + 1            
         return valid
-        # ===end student section===
 
 
 if __name__ == '__main__':
