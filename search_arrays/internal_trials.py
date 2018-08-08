@@ -64,9 +64,6 @@ def run_dictionary_trials(num_trials=1):
 
         # repeat the following num_trials times:
         #   check whether a randomly generated number is in the dictionary
-        # ---start student section---
-        pass
-        # ===end student section===
         # keep track of all the times
         list_of_times.append(time_taken_per_locate)
     return list_of_sizes, list_of_times
