@@ -4,7 +4,7 @@ Repo containing Algorithms and Data Structure coded using Python
 # Contains:
 
 **Math Expression parser using Data Structures**
-/nmodified stack, queue and deque to evaluate prefix,
+modified stack, queue and deque to evaluate prefix,
 infix and postfix expressions
 
 **Linked Lists**
