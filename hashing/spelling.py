@@ -96,7 +96,6 @@ class ChainingHashTable():
         to reduce it down to a number in the range 0..slef.n_slots """
         
         #We will use a trivial hash function here to start with
-        #Don't worry, you will get to update it later in the lab...
         index = nice_hash(item) % self.n_slots
         return index
 
@@ -135,10 +134,8 @@ class ChainingHashTable():
         """
         # remember self._data[index] contains a list of items that hash to 
         # the slot at the given index
-        # ---start student section---
         index = self._hash(item)
         return item in self._data[index]
-        # ===end student section===
 
 
 
@@ -217,8 +214,6 @@ class LinearHashTable():
                 print("Hash table is full!!!! You eeediot")
                 print("A good Hasher would have resized the hash table by now!")
                 raise IndexError ("Hash table is full!!!!")
-        # ***********************************************************
-        # ---start student section---
         index = self._hash(item)
         if self._data[index] == '-':
             self._data[index] = item
@@ -226,7 +221,6 @@ class LinearHashTable():
             new_index = self._next_free_slot(index, item)
             self._data[new_index] = item
         
-        # ===end student section===
 
         # Keep track of number of items in hash table
         self.n_items += 1
@@ -365,16 +359,12 @@ class QuadraticHashTable():
                 print("Hash table is full!!!! You eeediot")
                 print("A good Hasher would have resized the hash table by now!")
                 raise ValueError ("Hash table is full!!!!")
-        # **************************************************
-        # Write your spell check code here 
-        # ---start student section---
         index = self._hash(item)
         if self._data[index] == '-':
             self._data[index] = item
         else:
             new_index = self._next_free_slot(index, item)
-            self._data[new_index] = item        
-        # ===end student section===
+            self._data[new_index] = item      
         self.n_items += 1
         
     def _hash(self, item):
@@ -447,9 +437,6 @@ def spellcheck_with_list(document, dictionary):
     num_errors = 0
     start_check_time = clock()
    
-    # *****************************************
-    # Write your spell check code here 
-    # ---start student section---
     duplicates = set()
     for word in document:
         if word not in dictionary: 
@@ -457,7 +444,6 @@ def spellcheck_with_list(document, dictionary):
             print(word)
             duplicates.add(word)
     print(len(duplicates))
-    # ===end student section===
     end_check_time = clock()
     
     print('---------------------')
@@ -507,9 +493,6 @@ def spellcheck_with_hashtable(document, dictionary, ht_type, ht_size):
     num_errors = 0
     start_check_time = clock()
     
-    # *****************************************
-    # Write your spell check code here 
-    # ---start student section---
     count = 0
     unique = set()
     for word in document:
@@ -519,8 +502,7 @@ def spellcheck_with_hashtable(document, dictionary, ht_type, ht_size):
             print(count, word)
             unique.add(word)
     print(len(unique))
-    # ===end student section===
-            
+    
     end_check_time = clock()
     print('-'*50)
     print('Number of errors = {0:d} words'.format(num_errors))  
@@ -549,9 +531,7 @@ def binary_search(values, needle):
     lowerBound = 0
     upperBound = len(values)
     index = 0
-    # ---start student section---
-    pass
-    # ===end student section===
+    
     return False
 
 # ------------------------------------------------
