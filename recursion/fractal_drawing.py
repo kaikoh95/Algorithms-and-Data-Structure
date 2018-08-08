@@ -107,9 +107,7 @@ class HilbertCurve(FractalCanvas):
         self.turtleScreeni.update()        
         
     def draw_hilbert(self, level, angle):
-        # ---start student section---
         pass
-        # ===end student section===
 
 
 
@@ -130,9 +128,7 @@ class KochCurve(FractalCanvas):
            draws a (level-1) koch_curve then turns ANGLE degress left
            draws a (level-1) koch_curve.
         then draws another level-1 kochcurve."""
-        # ---start student section---
         pass
-        # ===end student section===
 
     def draw(self, width, height):
         # Reset the turtle
@@ -166,9 +162,6 @@ class KochSnowflake(KochCurve):
         self.turtle.right(60)
         length = math.sqrt(math.pow(width/2, 2) + math.pow(height/1.5, 2))
         # Now draw three kock_curves, turning 120o right in between
-        # ---start student section---
-        pass
-        # ===end student section===
 
 
 
@@ -182,9 +175,7 @@ class DragonCurve(FractalCanvas):
  
     def draw_dragon(self, level, length, angle):
         """Recursive funciton for drawing dragon curves."""
-        # ---start student section---
         pass
-        # ===end student section===
 
     def draw(self, width, height):
         # Reset the turtle
