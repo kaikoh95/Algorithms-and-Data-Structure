@@ -1,4 +1,4 @@
-from Structures import Stack, Deque, Queue
+from structures import Stack, Deque, Queue
 import re
 import doctest
 import os
