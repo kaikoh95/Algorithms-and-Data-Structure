@@ -1,5 +1,5 @@
 """
-Implements Queue class using doubly linked list structure.
+Implements Queue class using Doubly Linked List structure.
 """
 import doctest
 import os
@@ -60,7 +60,7 @@ class Queue2(object):
 
     def enqueue(self, item):
         """Add an item onto the tail of the queue."""
-        # ---start student section---
+
         new = Node(item)
         new.next_node = None
         if self.head is None:
@@ -75,47 +75,47 @@ class Queue2(object):
                 self.head.next_node = new
                 self.tail = new
                 self.head = alpha
-        # ===end student section===
 
+                
     def dequeue(self):
         """Remove an item from the head of the queue and return it.
         If queue is empty you should raise an IndexError as per
         the comment below."""
         # use the following line to raise error if stack is empty
         # raise IndexError("Can't dequeue from empty queue.")
-        # ---start student section---
+
         if self.is_empty():
             raise IndexError("Can't dequeue from empty queue.")
         else:
             alpha = self.head.data
             self.head = self.head.next_node
             return alpha
-        # ===end student section===
 
+        
     def is_empty(self):
         """ Returns True if the Queue is empty """
-        # ---start student section---
-        return self.head is None
-        # ===end student section===
 
+        return self.head is None
+
+    
     def __len__(self):
         """ Returns the length --- calling len(q) will invoke this method"""
-        # ---start student section---
+
         count = 0
         alpha = self.head
         while alpha is not None:
             count += 1
             alpha = alpha.next_node
         return count        
-        # ===end student section===
 
+    
     def __str__(self):
         """Returns a string representation of the list for the queue starting
         from the beginning of the list. Items are separated by ->
         and ending with -> None
         See doctests in class docstring
         """
-        # ---start student section---
+
         string = 'List for queue is: '
         alpha = self.head
         while alpha is not None:
@@ -125,8 +125,8 @@ class Queue2(object):
         if alpha is None:
             string += 'None'
         return string           
-        # ===end student section===
 
+    
 
 if __name__ == '__main__':
     os.environ['TERM'] = 'linux'  # Suppress ^[[?1034h
