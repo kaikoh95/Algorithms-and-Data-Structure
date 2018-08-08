@@ -9,7 +9,7 @@ infix and postfix expressions
 
 **Linked Lists**
 implemented stack and queue using singly-linked list structure,
-queue using doubly-linked list structure
+queue2 using doubly-linked list structure
 
 **Recursion**
 recursive functions and their real-world applications
