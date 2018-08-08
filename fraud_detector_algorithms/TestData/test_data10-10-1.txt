@@ -1,0 +1,27 @@
+#First booth size and voter names:
+10
+Amargo Huang
+Annemie Sabety
+Arina Devouges
+Bambie Capostagno
+Crin Cizmar
+Deeann Letulle
+Dulcine Walkley
+Elvina Rangooni
+Fahim Anstead
+Ketty Chuah
+#Second booth size and voter names:
+10
+Alie Pegler
+Beulah Bartolucci
+Brande Kalechstein
+Calley Toolroom
+Dede Braddock
+Dulcine Walkley
+Gen Shiell
+Jerald Claybrook
+Toshinari Bour
+Vasu Rendon
+#Fraud votes size and voter names:
+1
+Dulcine Walkley

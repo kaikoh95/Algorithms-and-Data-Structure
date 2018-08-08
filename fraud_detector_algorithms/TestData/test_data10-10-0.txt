@@ -1,0 +1,26 @@
+#First booth size and voter names:
+10
+Danya Mo
+Lyne Research
+Maddie Firment
+Mufi Brouthillier
+Nahum Frosst
+Rand Loftis
+Raye Draper
+Stephanie Udayasekaran
+Trina Lotan
+Zino Sugihara
+#Second booth size and voter names:
+10
+Carlynn Stanley
+Crystal Fralix
+Danita Rupnow
+Dnsproj Colterman
+Ingemar Fullmer
+Mat Walta
+Othelia Powney
+Paper Xmssupport
+Vance Murdock
+Wan Abovyan
+#Fraud votes size and voter names:
+0

@@ -1,0 +1,36 @@
+#First booth size and voter names:
+10
+Bart Schmeler
+Dasha Scheer
+Dayna Sobchuk
+Jossine Engelberg
+Karlee Blodgett
+Leigha Nettles
+Mamie Grigg
+Olivie Augeri
+Rijswijk Obrien
+Tracie Hutchinson
+#Second booth size and voter names:
+10
+Bart Schmeler
+Dasha Scheer
+Dayna Sobchuk
+Jossine Engelberg
+Karlee Blodgett
+Leigha Nettles
+Mamie Grigg
+Olivie Augeri
+Rijswijk Obrien
+Tracie Hutchinson
+#Fraud votes size and voter names:
+10
+Bart Schmeler
+Dasha Scheer
+Dayna Sobchuk
+Jossine Engelberg
+Karlee Blodgett
+Leigha Nettles
+Mamie Grigg
+Olivie Augeri
+Rijswijk Obrien
+Tracie Hutchinson

@@ -1,0 +1,11 @@
+#First booth size and voter names:
+2
+Buford Borozny
+Val Lauriault
+#Second booth size and voter names:
+2
+Buford Borozny
+Erna Stainback
+#Fraud votes size and voter names:
+1
+Buford Borozny
