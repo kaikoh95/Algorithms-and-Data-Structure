@@ -58,11 +58,9 @@ class Stack(object):
 
     def push(self, item):
         """push a new item on to the stack"""
-        # ---start student section---
         temp = Node(item)
         temp.next_node = self.head
         self.head = temp
-        # ===end student section===
 
     def pop(self):
         """pop an item off the top of the stack, and return it
@@ -70,15 +68,15 @@ class Stack(object):
         the comment below."""
         # use the following line to raise error when stack is empty
         # raise IndexError("Can't pop from empty stack.")
-        # ---start student section---
+        
         if self.is_empty():
             raise IndexError("Can't pop from empty stack.")
         else:
             temp = self.head.data
             self.head = self.head.next_node
             return temp
-        # ===end student section===
 
+        
     def peek(self):
         """pop an item on the top of the top of the stack, but don't remove it.
         If stack is empty you should raise an IndexError as per
@@ -86,35 +84,35 @@ class Stack(object):
         """
         # use the following line to raise error when stack is empty
         # raise IndexError("Can't peek at empty stack.")
-        # ---start student section---
+
         if self.is_empty():
             raise IndexError("Can't peek at empty stack.")
         else:
             return self.head.data
-        # ===end student section===
 
+        
     def is_empty(self):
         """ Returns True if stack is empty """
         return self.head is None
 
     def __len__(self):
         """ Returns the length --- calling len(s) will invoke this method """
-        # ---start student section---
+
         count = 0
         alpha = self.head
         while alpha is not None:
             count += 1
             alpha = alpha.next_node
         return count
-        # ===end student section===
 
+    
     def __str__(self):
         """Returns a string representation of the list for the stack starting
         from the beginning of the list. Items are separated by ->
         and ending with -> None
         See doctests in class docstring
         """
-        # ---start student section---
+
         string = 'List for stack is: '
         alpha = self.head
         while alpha is not None:
@@ -124,7 +122,6 @@ class Stack(object):
         if alpha is None:
             string += 'None'
         return string                
-        # ===end student section===
 
 
 class Queue(object):
@@ -167,7 +164,7 @@ class Queue(object):
 
     def enqueue(self, item):
         """Add an item onto the tail of the queue."""
-        # ---start student section---
+
         new = Node(item)
         new.next_node = None
         if self.head is None:
@@ -179,7 +176,6 @@ class Queue(object):
             if self.head.next_node is None:
                 self.head.next_node = new
                 self.head = alpha
-        # ===end student section===
 
     def dequeue(self):
         """Remove an item from the head of the queue and return it.
@@ -187,39 +183,39 @@ class Queue(object):
         the comment below."""
         # use the following line to raise error when queue is empty
         # raise IndexError("Can't dequeue from empty queue.")
-        # ---start student section---
+
         if self.is_empty():
             raise IndexError("Can't dequeue from empty queue.")
         else:
             temp = self.head.data
             self.head = self.head.next_node
             return temp
-        # ===end student section===
 
+        
     def is_empty(self):
         """ returns True if the queue is empty """
-        # ---start student section---
-        return self.head is None
-        # ===end student section===
 
+        return self.head is None
+
+    
     def __len__(self):
         """ Returns the length --- calling len(q) will invoke this method """
-        # ---start student section---
+
         count = 0
         alpha = self.head
         while alpha is not None:
             count += 1
             alpha = alpha.next_node
         return count
-        # ===end student section===
 
+    
     def __str__(self):
         """Returns a string representation of the list for the queue starting
         from the beginning of the list. Items are separated by ->
         and ending with -> None
         See doctests in class docstring
         """
-        # ---start student section---
+
         string = 'List for queue is: '
         alpha = self.head
         while alpha is not None:
@@ -229,7 +225,6 @@ class Queue(object):
         if alpha is None:
             string += 'None'
         return string           
-        # ===end student section===
 
 
 if __name__ == '__main__':
