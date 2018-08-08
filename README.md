@@ -1,38 +1,38 @@
 # Algorithms_and_Data_Structure
 Repo containing Algorithms and Data Structure coded using Python
 
-Contains:
+# Contains:
 
-# Math Expression parser using Data Structures
+**Math Expression parser using Data Structures**
 modified stack, queue and deque to evaluate prefix,
 infix and postfix expressions
 
-# Linked Lists
+**Linked Lists**
 implemented stack and queue using singly-linked list structure,
 queue using doubly-linked list structure
 
-# Recursion
+**Recursion**
 recursive functions and their real-world applications
 
-# Hashing
+**Hashing**
 classes for chaining, linear and quadratic hash tables
 
-# Simple Sorts (n^2)
+**Simple Sorts (n^2)**
 selection, insertion, gap insertion, shell sorts
 
-# Faster Sorts (nlogn)
+**Faster Sorts (nlogn)**
 quicksort
 
-# Trees
+**Trees**
 binary search tree
 
-# Heaps
+**Heaps**
 2- and 3-heap tree structures
 
-**Applications**
+# Applications:
 
-# Fraud Dectector 
+**Fraud Dectector**
 using sequential, merge, hash and binary search algorithms
 
-# Priority Queues
+**Priority Queues**
 basic, changeable, d-heap and fast versions
