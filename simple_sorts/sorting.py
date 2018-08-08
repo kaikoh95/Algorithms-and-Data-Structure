@@ -98,7 +98,6 @@ def shell_sort(file_name):
 
 
 def shell_sort2(file_name, gaplist):
-    # ---start student section---
     alist = load_file(file_name)
     n_comps = 0
     for i in range(len(gaplist)):
@@ -108,7 +107,6 @@ def shell_sort2(file_name, gaplist):
             n_comps += count    
     print("Shell sort on {0}, {1:d} items, used {2:d} comparisons. Gaps were {3}".format(file_name,len(alist),n_comps, str(gaplist)))
     return alist
-    # ===end student section===
 
 
 
