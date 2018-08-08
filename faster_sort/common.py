@@ -22,9 +22,6 @@ def common_items(list_x,list_y):
     
     """
 
-    #Your code goes here
-    #You should have just finished a nice sort function you can use
-    #to sort the lists in to order
     common = []
     pos1 = 0
     pos2 = 0
