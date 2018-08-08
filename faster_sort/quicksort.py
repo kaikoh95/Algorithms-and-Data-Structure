@@ -152,7 +152,6 @@ def quicksort_range_helper(values, left, right, start, end, style):
     # Stop when the left and right indices cross
     if left >= right:
         return None
-    # ---start student section---
     if (start < left and end < right) or (start > left and end > right):
         quicksort_range(values, left, right, style)
     else:
@@ -164,7 +163,6 @@ def quicksort_range_helper(values, left, right, start, end, style):
     
         # Sort the right part
         quicksort_helper(values, split + 1, right, style)
-    # ===end student section===
 
 
 def pivot_index_Mo3(values, left, right):
@@ -214,7 +212,6 @@ def pivot_index_Mo3(values, left, right):
     """
 
     middle = (left + right) // 2
-    # ---start student section---
     if len(values) < 3:
         return left
     else:
@@ -225,7 +222,6 @@ def pivot_index_Mo3(values, left, right):
             return right
         elif pivot_r <= pivot_m <= pivot_l or pivot_l <= pivot_m <= pivot_r:
             return middle
-    # ===end student section===
 
 
 if __name__ == "__main__":
