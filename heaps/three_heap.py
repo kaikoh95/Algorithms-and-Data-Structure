@@ -90,7 +90,6 @@ class Max_3_Heap(Heap):
         the correct place for it. That is, the item is moved up through the heap
         while it is larger than its parent.
         """
-        # ---start student section---
         parent = (index) // 2
         # While we haven't reached the top of the heap, and its parent is
         # bigger than the item
@@ -100,7 +99,6 @@ class Max_3_Heap(Heap):
                 self._items[parent], self._items[index]
             index = parent
             parent = (index) // 2          
-        # ===end student section===
             
     #-------------------------------------------------           
     def peek_max(self):
@@ -191,9 +189,8 @@ class Max_3_Heap(Heap):
         the correct place for it. That is, the item is moved down through the
         heap while it is smaller than either of its children.
         """
-        # ---start student section---
+        
         pass
-        # ===end student section===
 
             
     #-------------------------------------------------        
@@ -214,7 +211,6 @@ class Max_3_Heap(Heap):
         False
         """
         
-        # ---start student section---
         valid = True
         i = 1
         left = i * 3 - 1
@@ -236,9 +232,7 @@ class Max_3_Heap(Heap):
             left = i * 3 - 1
             mid = i * 3
             right = i * 3 + 1            
-        return valid        
-        # ===end student section===
-        
+        return valid                
         
         
 if __name__ == '__main__':
