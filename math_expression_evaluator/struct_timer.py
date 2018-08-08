@@ -1,6 +1,6 @@
 import sys
 import time
-from Structures import Stack, Queue
+from structures import Stack, Queue
 
 # Get the time units given by the perf_counter
 # Note: time.clock has been deprecated in Python 3.3
