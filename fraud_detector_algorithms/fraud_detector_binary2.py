@@ -26,4 +26,4 @@ def fraud_detect_bin(first_booth_voters, second_booth_voters):
             count += 1
             if second_booth_voters[mid] == voter:
                 fraud_list.append(voter)
-    return fraud_list, count
+    return fraud_list, count 
