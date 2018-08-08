@@ -1,8 +1,6 @@
 import sys
 import time
-from structs import Stack
-from structs import Queue
-
+from Structures import Stack, Queue
 
 # Get the time units given by the perf_counter
 # Note: time.clock has been deprecated in Python 3.3
@@ -21,7 +19,3 @@ else:
     
     
 # Do some testing here, sing get_time() to get start and end times
-# ---start student section---
-
-# ===end student section===
-    
