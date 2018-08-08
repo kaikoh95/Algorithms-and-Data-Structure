@@ -25,7 +25,6 @@ def common_items(list_x,list_y):
     #Your code goes here
     #You should have just finished a nice sort function you can use
     #to sort the lists in to order
-    # ---start student section---
     common = []
     pos1 = 0
     pos2 = 0
@@ -51,7 +50,6 @@ def common_items(list_x,list_y):
             else:
                 pos2 += 1    
     return common, count
-    # ===end student section===
 
 if __name__ == "__main__": 
     doctest.testmod()
