@@ -67,7 +67,6 @@ class FreqList(object):
         very inefficient... think about why.
         """
 
-        # ---start student section---
         count = 0
         alpha = self.head
         while alpha is not None:
@@ -75,7 +74,6 @@ class FreqList(object):
                 count += 1
             alpha = alpha.next_node
         return count
-        # ===end student section===
 
     def get_xy_for_plot(self):
         """ Returns two lists that can be used for plotting
@@ -165,7 +163,6 @@ class UnsortedFreqList(FreqList):
           1:  'b' = 1
           2:  'a' = 2
         """
-        # ---start student section---
         if self.head is None:
             self.head = FreqNode(new_item)
         else:
@@ -181,7 +178,6 @@ class UnsortedFreqList(FreqList):
                 new = FreqNode(new_item)
                 new.next_node = self.head
                 self.head = new
-        # ===end student section===
 
     def __str__(self):
         """ Basically returns the frequencies as per FreqList
@@ -233,7 +229,6 @@ class NicerUnsortedFreqList(FreqList):
           1:  'a' = 2
           2:  'b' = 1
         """
-        # ---start student section---
         if self.head is None:
             self.head = FreqNode(new_item)
         else:
@@ -257,7 +252,6 @@ class NicerUnsortedFreqList(FreqList):
                     if self.head.next_node is None:
                         self.head.next_node = new
                         self.head = alpha   
-        # ===end student section===
 
     def __str__(self):
         """ Basically returns the frequencies as per FreqList
@@ -351,7 +345,6 @@ class SortedFreqList(FreqList):
           1:  'a' = 3
           2:  'b' = 2
         """
-        # ---start student section---
         if self.head is None:
             self.head = FreqNode(new_item)
         else:
@@ -382,7 +375,6 @@ class SortedFreqList(FreqList):
                     if self.head.next_node is None:
                         self.head.next_node = new
                         self.head = alpha 
-        # ===end student section===
 
     def __str__(self):
         """ Basically returns the frequencies as per FreqList
