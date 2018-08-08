@@ -35,31 +35,25 @@ class Stack(object):
 
     def push(self, item):
         """Push a new item onto the stack."""
-        # ---start student section---
         self._items.append(item)
-        # ===end student section===
 
     def pop(self):
         """Pop an item off the top of the stack and return it.
         Raise IndexError if empty - see comments below."""
-        # ---start student section---
         try:
             item = self._items.pop()
-        # ===end student section===
         # Raise IndexError if empty, eg,
         except IndexError:
             print("""Traceback (most recent call last):
 ...
-IndexError: Can\'t pop from empty stack!""")# raise IndexError('Can\'t pop from empty stack!')
+IndexError: Can\'t pop from empty stack!""") # raise IndexError('Can\'t pop from empty stack!')
         else:
             return item
 
     def peek(self):
         """Return the item on the top of the stack, but don't remove it.
         Returns None if the list is empty"""
-        # ---start student section---
         return self._items[-1]
-        # ===end student section===
 
     def is_empty(self):
         return len(self) == 0
@@ -102,17 +96,13 @@ class Queue(object):
 
     def enqueue(self, item):
         """Add an item onto the rear of the queue."""
-        # ---start student section---
         self._items.append(item)
-        # ===end student section===
 
     def dequeue(self):
         """Remove an item from the front of the queue and return it.
         Raise IndexError if empty, see comment below."""
-        # ---start student section---
         try:
             item = self._items.pop(0)
-        # ===end student section===
         except IndexError:
             print("""Traceback (most recent call last):
 ...
