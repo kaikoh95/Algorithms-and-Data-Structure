@@ -154,11 +154,6 @@ def tree(size,level):
         left(angle)
         setpos(x)
 
-
-
-#-------------------------------------------------------------------------------
-#Functions for students to implement
-#-------------------------------------------------------------------------------
         
 def linked_list_length(list_node):
     """
@@ -181,12 +176,11 @@ def linked_list_length(list_node):
     >>> linked_list_length(first_node)
     5
     """
-    # ---start student section---
+    
     if list_node is None:
         return 0
     else:
         return 1 + linked_list_length(list_node.next_node)
-    # ===end student section===
     
     
 def linked_list_print(list_node):
@@ -212,13 +206,12 @@ def linked_list_print(list_node):
     3
     4
     """
-    # ---start student section---
+
     if list_node is None:
         pass
     else:
         print(list_node.data)
         linked_list_print(list_node.next_node)
-    # ===end student section===
     
 
 def linked_list_reverse_print(list_node):
@@ -244,13 +237,12 @@ def linked_list_reverse_print(list_node):
     2
     1
     """
-    # ---start student section---
+
     if list_node is None:
         pass
     else:
         linked_list_reverse_print(list_node.next_node)
         print(list_node.data)
-    # ===end student section===
     
    
 def is_in_linked_list(list_node,item):
@@ -271,7 +263,7 @@ def is_in_linked_list(list_node,item):
     >>> is_in_linked_list(first_node,10)
     False
     """
-    # ---start student section---
+
     if list_node is None:
         return False
     elif list_node.data == item:
@@ -279,8 +271,6 @@ def is_in_linked_list(list_node,item):
     else:
         return is_in_linked_list(list_node.next_node, item)
         
-    # ===end student section===
-
         
         
 
@@ -293,12 +283,11 @@ def factorial(n):
     >>> factorial(5)
     120
     """
-    # ---start student section---
+
     if n == 0 or n == 1:
         return 1
     else:
         return factorial(n - 1) * n
-    # ===end student section===
 
 
     
@@ -316,7 +305,7 @@ def quick_power(x,n):
     65536
     
     """
-    # ---start student section---
+
     if n == 0:
         ans = 1
         count = 0
@@ -329,7 +318,6 @@ def quick_power(x,n):
         ans = qp * x
         count += 1
     return ans, count
-    # ===end student section===
 
     
     
@@ -345,11 +333,10 @@ def recursive_string_print(s):
     n
     g
     """
-    # ---start student section---
+
     if len(s) > 0:
         print(s[0])
         recursive_string_print(s[1:])
-    # ===end student section===
 
 
 
@@ -365,11 +352,10 @@ def recursive_reverse_string_print(s):
     t
     s
     """
-    # ---start student section---
+
     if len(s) > 0:
         print(s[-1])
         recursive_reverse_string_print(s[:-1])
-    # ===end student section===
 
     
     
